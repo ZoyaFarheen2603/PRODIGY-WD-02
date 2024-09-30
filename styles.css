@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #8bcdce, #0d57c0b7); /* Light neutral gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #222; /* Darker, more professional text color */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Pure white for a cleaner look */
+    padding: 40px;
+    border-radius: 20px; /* More rounded corners */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Larger, softer shadow */
+    max-width: 500px;
+    width: 100%;
+    color: #222; /* Dark text for good readability */
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1f1f1f;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.stopwatch {
+    margin-bottom: 30px;
+}
+
+#display {
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px; /* Adds spacing between buttons */
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadows for buttons */
+}
+
+#start {
+    background: linear-gradient(135deg, #34e89e, #0f3443); /* Green gradient */
+}
+
+#pause {
+    background: linear-gradient(135deg, #f7971e, #ffd200); /* Orange-yellow gradient */
+}
+
+#reset {
+    background: linear-gradient(135deg, #f54ea2, #ff7676); /* Pink-red gradient */
+}
+
+#lap {
+    background: linear-gradient(135deg, #1c92d2, #f2fcfe); /* Blue gradient */
+    color: #1f1f1f; /* Dark text on light button */
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05); /* Slightly larger on hover */
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.laps {
+    margin-top: 30px;
+    background-color: rgba(240, 240, 240, 0.8); /* Light, subtle background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for the laps section */
+}
+
+#laps-list {
+    list-style: none;
+    padding-left: 0;
+    color: #333;
+}
+
+#laps-list li {
+    padding: 10px 0;
+    color: #444;
+    border-bottom: 1px solid #ddd;
+    font-weight: 500;
+}
+
+h2 {
+    color: #1f1f1f;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
